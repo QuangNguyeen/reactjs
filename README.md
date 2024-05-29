@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# reactjs
 =======
 # Getting Started with Create React App
 
