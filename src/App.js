@@ -2,21 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = "Quang"
+  const age = 19
+  const isMale = true
+  const student = {
+    name: 'Easy FrontEnd'
+  }
+  const colorList = ['green', 'blue', 'red'];
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            <p>Xin chao {name} - {age} - {isMale ? "Male":"Female"}</p>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ul>
+          {colorList.map((color) => (
+              <li key = {color} style={{color}}>{color}</li>
+          ))}
+        </ul>
       </header>
     </div>
   );
